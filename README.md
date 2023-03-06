@@ -71,6 +71,7 @@ Move required files to the /data/images , /data/keypoints
 
 
 ``` 
+
 ./run.sh
 
 ```
@@ -109,3 +110,29 @@ Change the value of the maxiters in the yaml file
 
 
 https://github.com/kuai-lab/iterative_fitting_hand/blob/c7617c0748f9cb59669d6dd3d52c4bce7cfc00e7/cfg_files/fit_smplx.yaml#L44
+
+
+
+
+### Visualizing generated handmesh per image
+
+You can visualize the generated hand mesh per image. Uncomment the code from smplifyx/fit_single_frame.py
+
+
+
+#### Visualizing Hand mesh
+
+https://github.com/kuai-lab/iterative_fitting_hand/blob/c7617c0748f9cb59669d6dd3d52c4bce7cfc00e7/smplifyx/fit_single_frame.py#L539
+
+``` 
+#hand_mesh.show()
+```
+
+
+#### Visualizing Hand mesh with vertices
+
+https://github.com/kuai-lab/iterative_fitting_hand/blob/c7617c0748f9cb59669d6dd3d52c4bce7cfc00e7/smplifyx/fit_single_frame.py#L544
+
+``` 
+#scene.show()
+```
